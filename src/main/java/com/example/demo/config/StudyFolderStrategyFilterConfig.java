@@ -12,7 +12,7 @@ import org.springframework.integration.file.filters.FileListFilter;
  * StudyFolderStrategy
  */
 @Configuration
-@ConditionalOnExpression("${properties.scan.studyfiles.strategy:studydir} || ${properties.scan.studyfiles.strategy:versiondir}")
+@ConditionalOnExpression(value = "'${properties.scan.studyfiles.strategy}'.equals('studydir') or '${properties.scan.studyfiles.strategy}'.equals('versiondir')")
 public class StudyFolderStrategyFilterConfig {
 
     @Bean
