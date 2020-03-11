@@ -51,7 +51,19 @@
 			<artifactId>spring-integration-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.pivovarit</groupId>
+			<artifactId>throwing-function</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.4</version>
+		</dependency>
 	</dependencies>
+
+
 
 	<build>
 		<plugins>
